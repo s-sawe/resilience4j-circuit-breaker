@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>catalogservice</module>
+        <module>userservice</module>
     </modules>
 
     <name>resileince4j-circuit-breaker</name>
