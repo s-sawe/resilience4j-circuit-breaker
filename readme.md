@@ -1,5 +1,7 @@
 RESILIENCE4J
+
 . It is a fault tolerance library
+
 . Requires Java 17
 
 The dependencies required are:
@@ -22,9 +24,15 @@ The dependencies required are:
         </dependency>
 
 The Features and Modules of Resilience4j are:
+
 . Circuit Breaker - Fault tolerance
+
 . Rate Limiter - Blocks too frequent requests
+
 . Time Limiter - Sets a time limit when calling a remote application
-. Retry Mechanism - Automatic retrying (sync & async)
+
+. Retry Mechanism - Automatic retrying (sync & async)c
+
 . Bulkhead - Avoids too many concurrent requests
+
 . Cache - Stores the results of a costly remote operations
