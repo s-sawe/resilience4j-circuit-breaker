@@ -21,10 +21,10 @@ public class UserController {
     @Lazy
     private RestTemplate restTemplate;
 
-    private static final String BASE_URL = "http://http://localhost:8080/api/v1/all";
+    private static final String BASE_URL = "http://localhost:8080/api/v1/all";
 
-    @GetMapping("show-orders")
-    public List<CategoryDTO> showOrders(@RequestParam("category")String category){
+    @GetMapping("show-orders") //for all orders, use endpoint = http://localhost:8081/api/v1/show-orders?category
+    public List<CategoryDTO> showOrders(@RequestParam("category") String category){
         String url = category == null ? BASE_URL : BASE_URL + "/" + category;
         return restTemplate.getForObject(url, ArrayList.class);
     }
@@ -33,6 +33,5 @@ public class UserController {
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
-
 
 }
