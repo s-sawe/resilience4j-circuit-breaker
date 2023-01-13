@@ -12,5 +12,5 @@ public class CategoryDTO {
     private String name;
     private String category;
     private String color;
-    private String price;
+    private Double price;
 }
